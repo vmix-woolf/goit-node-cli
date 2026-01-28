@@ -9,8 +9,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
-    "commander": "^14.0.2"
+    "commander": "^14.0.2",
+    "nanoid": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.1.0"
   }
 }
