@@ -1,6 +1,6 @@
 import { listContacts, getContactById, removeContact, addContact } from './contacts.js';
-
 import { program } from "commander";
+
 program
     .option("-a, --action <type>", "choose action")
     .option("-i, --id <type>", "user id")
@@ -39,4 +39,4 @@ async function invokeAction({ action, id, name, email, phone }) {
     }
 }
 
-invokeAction(options).catch(console.error);
+invokeAction({...options}).catch(console.error);
